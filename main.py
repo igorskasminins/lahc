@@ -2,7 +2,7 @@ import yaml
 import random
 from ast import literal_eval
 
-TEST_CASE = 'test6'
+TEST_CASE = 'test3'
 
 with open('config.yaml', 'r') as file:
     prime_service = yaml.safe_load(file)
