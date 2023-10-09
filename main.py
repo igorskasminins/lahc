@@ -4,9 +4,9 @@ from ast import literal_eval
 
 TEST_CASE = 'test3'
 
-with open('config.yaml', 'r') as file:
-    prime_service = yaml.safe_load(file)
-    matrix = literal_eval(prime_service[TEST_CASE])
+with open('tests.yaml', 'r') as file:
+    tests = yaml.safe_load(file)
+    matrix = literal_eval(tests[TEST_CASE])
 
 class WrongActionException(Exception):
     """ Exception for the impossible move that is being/was performed in a route """
